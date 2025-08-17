@@ -1,0 +1,36 @@
+BasedOnStyle: LLVM                         # LLVM - база
+UseTab: Always                             # всегда юзаем табы
+TabWidth: 2                                # ширина таба 2 символа
+IndentWidth: 2                             # ширина отступа 2 символа
+
+BreakBeforeBraces: Custom                  # включаем контроль переносов скобок **
+SpacesInParentheses: false                 # без пробелов внутри круглых скобок
+SpaceBeforeParens: ControlStatements       # пробел перед скобкой только у if/for/while
+
+AllowShortIfStatementsOnASingleLine: Never # никогда не держать if в одну строку (искл. устаревш. true/false)
+AllowShortBlocksOnASingleLine: false       # не сворачивать { ... } в одну строку
+ColumnLimit: 0                             # строка без ограничений по длине
+AlignAfterOpenBracket: Align               # выравнивать параметры после '('
+BinPackArguments: false                    # не «запихивать» аргументы в одну строку при переносе
+BinPackParameters: false                   # то же для параметров функций
+PointerAlignment: Left                     # звёздочка слева int* ptr
+
+BraceWrapping:                 # схема переносов фигурных скобок **
+  AfterControlStatement: false # оставляем K&R: if (...) { на одной строке
+  BeforeElse: true             # но перед else всегда перенос (} на одной, else на следующей)
+  BeforeCatch: true            # аналогично для catch
+
+  AfterFunction: false         # открывающая скобка функции на той же строке, что и сигнатура
+  AfterClass: false            # для class/struct
+  AfterNamespace: false        # для namespace
+
+  IndentBraces: false          # не добавлять отступ перед самими скобками
+  SplitEmptyFunction: false    # не раскладывать пустые функции на строки
+  SplitEmptyRecord: false      # не раскладывать пустые структуры/классы
+  SplitEmptyNamespace: false   # не раскладывать пустые namespace
+
+  # не получается только открывающую скобку у функций и тд настроить на скоеивание
+
+
+
+
