@@ -10,7 +10,6 @@
   │   ├── task_1_solution.docx
   │   ├── task_2_solution.docx
   │   ├── task_3_solution.docx
-  │   ├── task_4.txt
   │   ├── task_5_solution.docx
   │   └── task_6.txt
   │
