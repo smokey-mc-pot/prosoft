@@ -47,7 +47,7 @@ public:
 		delete[] f_;
 	}
 
-	virtual foo* copy() const { // const здесь и далее если данные не должны маняться
+	[[nodiscard]] virtual foo* copy() const { // const здесь и далее если данные не должны маняться
 		return new foo(*this);
 	}
 
